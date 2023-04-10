@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alarm and Time</string>
+    <string name="alarm"><font size="14">Alarm</font></string>
+    <string name="world_clock"><font size="14">World Clock</font></string>
+    <string name="stopwatch"><font size="14">Stopwatch</font></string>
+    <string name="timer"><font size="14">Timer</font></string>
+  tring>
+
+
+</resources>
