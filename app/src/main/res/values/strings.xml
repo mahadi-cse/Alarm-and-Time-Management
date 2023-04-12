@@ -4,7 +4,9 @@
     <string name="world_clock"><font size="14">World Clock</font></string>
     <string name="stopwatch"><font size="14">Stopwatch</font></string>
     <string name="timer"><font size="14">Timer</font></string>
-  tring>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    tring>
 
 
 </resources>

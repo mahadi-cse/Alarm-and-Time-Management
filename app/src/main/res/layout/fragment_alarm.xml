@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alarm">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp">
+
+      <TextView
+        android:layout_centerHorizontal="true"
+         android:id="@+id/alarm_in_hours"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Alarm in 4 hours"
+         android:layout_marginTop="35dp"
+         android:textSize="30sp"
+         android:textStyle="bold"
+          android:textColor="@color/white"
+         />
+     <TextView
+         android:layout_centerHorizontal="true"
+         android:id="@+id/alarm_in_minutes"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="40 minutes"
+         android:textSize="30sp"
+         android:layout_below="@+id/alarm_in_hours"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         />
+      <TextView
+         android:layout_centerHorizontal="true"
+         android:id="@+id/alarm_time_upside"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Thu, Apr 13, 3:50 AM"
+         android:textSize="15sp"
+          android:layout_marginTop="10dp"
+         android:layout_below="@+id/alarm_in_minutes"
+         />
+      <ImageButton
+          android:foreground="?android:attr/selectableItemBackground"
+          android:id="@+id/add_alarm"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_add_alarm"
+          android:background="#121212"
+          android:layout_alignParentBottom="true"
+          android:layout_toStartOf="@id/more_options"
+          android:clickable="true"
+          android:focusable="true" />
+
+      <ImageButton
+          android:foreground="?android:attr/selectableItemBackground"
+          android:layout_marginEnd="20dp"
+          android:layout_marginStart="5dp"
+          android:id="@+id/more_options"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_more_options"
+          android:background="#121212"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:clickable="true"
+          android:focusable="true" />
+
+  </RelativeLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="200dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/alarm_list_design"
+       />
+
+</FrameLayout>

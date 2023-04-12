@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <androidx.cardview.widget.CardView
+       android:layout_marginTop="12dp"
+       android:layout_marginBottom="12dp"
+       app:cardCornerRadius="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/alarm_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:includeFontPadding="true"
+           android:padding="20dp"
+           android:text="08:00"
+           android:textSize="24sp" />
+
+       <TextView
+           android:id="@+id/alarm_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="260dp"
+           android:layout_marginTop="25dp"
+           android:text="Thu , 13 april" />
+
+       <Switch
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+           android:layout_marginStart="350dp"
+           tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+   </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
