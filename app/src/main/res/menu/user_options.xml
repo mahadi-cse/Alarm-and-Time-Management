@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        />
+    <item
+        android:id="@+id/sort"
+        android:title="Sort"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        />
+</menu>
