@@ -1,6 +1,7 @@
 package com.example.alarmandtime;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -22,7 +23,7 @@ import java.util.Objects;
 
 public class Alarm extends Fragment {
 
-   ImageButton more;
+   ImageButton more,add_alrm;
 
 
     @Override
@@ -30,6 +31,7 @@ public class Alarm extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_alarm, container, false);
         more= view.findViewById(R.id.more_option);
+        add_alrm= view.findViewById(R.id.add_alarm);
         more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +65,12 @@ public class Alarm extends Fragment {
                 popup.show();
             }
         });
-
+        add_alrm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            startActivity(new Intent(getActivity(),AlarmSet.class));
+            }
+        });
         return view ;
     }
 }

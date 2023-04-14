@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmSet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/relative_time_set">
+
+        <TimePicker
+            android:id="@+id/alarm_time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:timePickerMode="spinner"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/relative_time_set"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <RelativeLayout
+            android:layout_marginStart="15dp"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sun"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:textSize="13sp"
+                    android:text="S"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <TextView
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:layout_toLeftOf="@+id/tue"
+                    android:layout_marginStart="50dp"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:layout_toLeftOf="@+id/wed"
+                    android:layout_marginStart="50dp"
+                    />
+                <TextView
+                    android:id="@+id/wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="W"
+                    android:layout_toLeftOf="@+id/thu"
+                    android:layout_marginStart="50dp"
+                    />
+                <TextView
+                    android:id="@+id/thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:layout_toLeftOf="@+id/fri"
+                    android:layout_marginStart="50dp"
+                    />
+                <TextView
+                    android:id="@+id/fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:layout_toLeftOf="@+id/sat"
+                    android:layout_marginStart="50dp"
+                    />
+                <TextView
+                    android:id="@+id/sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_below="@id/linear"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alarm Name"
+            android:id="@+id/Alarm_name"
+            />
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:id="@+id/relative_for_sound"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Alarm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_alarm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Sound"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_below="@+id/title_alarm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Glory"
+                android:textSize="10dp"
+                android:textColor="@color/alarm"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_below="@id/relative_for_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_alarm_vib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibration"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_below="@+id/title_alarm_vib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Call"
+                android:textSize="10dp"
+                android:textColor="@color/alarm"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
